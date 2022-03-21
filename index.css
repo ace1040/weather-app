@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    letter-spacing: 0.2rem;
+    
+}
+.card{
+    background: #000000a2;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    width: 25%;
+    min-width: 10rem;
+    color: white;
+    
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn{
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #7c7c7c4f;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.search-btn:hover{
+    background-color: white;
+    color: black;
+}
+.search-box{
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-radius: 2rem;
+    background-color: #7c7c7c4f;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+    width: 60%;
+    
+}
+.icon{
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+}
+.city{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.descrip{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.description{
+    text-transform: capitalize;
+}
+.temp{
+    font-size: 1.7rem;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 2rem;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+
+}
